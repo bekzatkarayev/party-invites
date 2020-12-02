@@ -1,8 +1,20 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    Layout = null;
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>PARTY!</title>
+</head>
+<body>
+    <div>
+        <div>
+            We're going to have an exciting party.<br /><br />
+            <img src="~/images/party-family.jpg" alt="family-party" style="width:50%;height:50%;">
+        </div>
+        <a asp-action="RsvpForm">RSVP Now</a>
+    </div>
+</body>
+</html>
